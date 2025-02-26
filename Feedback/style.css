@@ -1,0 +1,132 @@
+html, body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+}
+
+#modal{
+    display: flex;
+    width:100vw;
+    height:100vh;
+    background-color: rgb(203, 187, 251);
+    margin:0;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+#triggerBtn{
+    width:30%;
+    max-width:200px;
+    height: 50px;
+    background-color: rgb(71, 2, 174);
+    color: white;
+    border-radius: 100px;
+    cursor:pointer;
+    border: none;
+    font-size: 1rem;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform:translate(-50%, -50%);
+
+}
+
+#inner{
+    display: none;
+    width: 75%;
+    max-width: 800px;
+    height: 50%;
+    max-height: 400px;
+    min-height: 200px;
+    background-color: rgb(39, 22, 85);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgb(18, 3, 60);
+    position:relative;
+}
+
+h1{
+    text-align: center;
+}
+
+.ratingBtn{
+    font-size:1rem;
+    width:8%;
+    min-width: 40px;
+    height:20%;
+    min-height: 40px;
+    border-radius:10%;
+    background-color: rgb(200, 200, 200);
+    border: 0.1rem solid white;
+    color:white;
+}
+
+p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+}
+
+#allBtns{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 20px;
+}
+
+#cancelBtn{
+    width:80px;
+    height:30px;
+    border-radius: 8px;
+    background-color: rgb(18, 3, 60);
+    border: 1px solid rgb(71, 2, 174);
+    color: white;
+}
+
+#submitBtn{
+    width:80px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: rgb(131, 87, 250);
+    border: 1px solid rgb(131, 87, 250);
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(2, 0, 3);
+    border: 1px solid rgb(236, 235, 235);
+}
+
+
+
+#cancelBtn:hover{
+    background-color: rgb(18, 3, 60);
+    border: 1px solid rgb(137, 62, 250);
+}
+
+.Btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.fa-solid.fa-xmark{
+    position:absolute;
+    top:10px;
+    right:10px;
+    color: rgb(160, 159, 159);
+    z-index: 10;
+}
+
+.fa-solid.fa-xmark:hover{
+    color:white;
+}
+
+.ratingBtn.selected{
+    background-color: rgb(2, 0, 3);
+    border: 1px solid rgb(236, 235, 235);;
+     }
